@@ -1,11 +1,11 @@
 $(document).ready(function() {
     $("#introSection").hide();
     $("#messageSection").hide();
-        delay: 50
+        delay: 50;
     });
 
 
-    $("#questionSpace").hide()
+    $("#questionSpace").hide();
     var correctCounter = 0,
         incorrectCounter = 0,
         unansweredCounter = 0,
@@ -34,12 +34,12 @@ $(document).ready(function() {
                 $('#timerSeconds').html("0" + i);
                 $(".pickAnswer").on("click", function() {
                     clearInterval(myInterval);
-                })
+                });
             } else {
                 $('#timerSeconds').html(i);
                 $(".pickAnswer").on("click", function() {
                     clearInterval(myInterval);
-                })
+                });
             }
 
             if (i === 0) {
@@ -146,7 +146,7 @@ $(document).ready(function() {
             // checks if user is correct and will tally accordingly
             if (userChoice === questions[currentQuestionIndex].answer) {
                 correctCounter++;
-                currentQuestionIndex++
+                currentQuestionIndex++;
                 randomCongrats();
 
             } else {
@@ -155,12 +155,12 @@ $(document).ready(function() {
 
             }
             postQuestion(currentQuestionIndex);
-        })
+        });
     }
 
     function startTrivia() {
         $('#messageSection').hide();
-        $('#gameMessage').empty()
+        $('#gameMessage').empty();
         $('#questionContainer').show();
         $('#choices').show();
         $("#timer").show();
@@ -177,7 +177,7 @@ $(document).ready(function() {
         $('#messageSection').show();
         $('#questionContainer').hide();
         $('#choices').hide();
-        $('#timer').hide()
+        $('#timer').hide();
 
         $('#gameMessage').append("<h2>You have completed the game!</h2>");
         $('#gameMessage').append("<h4>Total Correct: " + correctCounter + "</h4>");
@@ -199,7 +199,7 @@ $(document).ready(function() {
         startTrivia();
 
 
-    })
+    });
 
 
-});
+};
