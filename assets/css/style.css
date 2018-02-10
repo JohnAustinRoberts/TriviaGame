@@ -143,3 +143,30 @@ body {
     margin-bottom: 40px;
     padding: 20px;
 }
+#neutralSideInstructions {
+    background-color: grey;
+    border: 2px solid #b3b3b3;
+    color: white;
+    text-align: center;
+    margin-left: 320px;
+    margin-bottom: 30px;
+    width: 800px;
+}
+#neutralSideQuestionSubmitDiv {
+    text-align: center;
+    width: 600px;
+    margin-left: 420px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.neutralSideQuestionOdd {
+    background-color: grey;
+    border: 2px solid #b3b3b3;
+    color: white;
+    text-align: center;
+    margin-left: 320px;
+    margin-bottom: 10px;
+    width: 800px;
+
+}
