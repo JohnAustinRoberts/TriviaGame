@@ -304,6 +304,8 @@ function result() {
   } else if (questionsCorrect == 0) {
     div.innerHTML += 'I find your lack of faith disturbing.</br></br><img src="assets/images/vader.jpg">'
   }
+
+    div.innerHTML += 'Questions your missed: ' + questionsIncorrect 
 } 
 result();
 } 
