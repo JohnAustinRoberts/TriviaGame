@@ -1,81 +1,74 @@
 <!DOCTYPE HTML>
-<html>
+<html lang='en-us'>
 
 <head>
+    <!--Title-->
     <title>Star Wars Trivia</title>
-    <!-- Compiled and minified CSS -->
-    <!-- GOOGLE'S MATERIALIZE -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
 
 <body>
-    <!--headline-->
-    <div class="parallax-container" id='parall'>
-        <section id="introSection">
-            <h1 class="center-align" id='header'>Star Wars Trivia</h1>
-            <div class="row" id="introCard">
-                <div class="col s6 offset-s3">
-                    <div class="center-align">
-                        <span>Are you ready?</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="buttonRow">
-                <div class="col s3 offset-s3 center-align">
-                    <a class="btn-large btn-flat" id="startButton">Start</a>
-                </div>
-                
-                </div>
-
-    <!-- questions -->
-            <section id="questionSpace" class="container">
-                <div class="row">
-                    <div class="col s12 center-align" id="timer">
-    <!-- time -->
-
-                    </div>
-                </div>
-                <div class="row" id="messageSection">
-                    <div class="col s12" id="gameMessage">
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="questionContainer" class="col s12 center-align">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div id="choices" class="col s8 offset-s2 center-align">
-    <!-- push questions into <p>-->
-                    </div>
-                </div>
-            </section>
-    <!-- end questions -->
-        </section>
-        <div class= "center-align"><img src="assets/images/download.jpg"></div>
-
-    </div>
-
-    <div>
-        <div class="Jumbotron center-align">
-            <h3>Instructions</h3>
-                <p>Think you know Star Wars, do you? If you wish to prove it? Pass my test you must.</p>
-                <p>Press the Start button and attempt the quiz. When you complete the quiz, specialized droids will calculate your results and display your results.
-            </p>
-        
-            </div>
+    <!--create a wrapper div-->
+    <div id="wrapper">
+        <!--Title-->
+        <div id="titleDiv">
+            <h1>Star Wars Trivia</h1>
+        <!--closes title-->
         </div>
-       
+        <!--create instructions div-->
+        <div id="instructions">
+            <h3 class="instructionsTitle">Instructions</h3>
+            <p>Think you know Star Wars, do you? If you wish to prove it? Then pass my test you must.</p>
+            <p>Choose a side and attempt that faction's quiz. When you complete each quiz, specialized droids will calculate your results and display your results.
+            </p>
+        <!--closes instructions -->    
+        </div>
+        <!-- create div to choose your side/quiz -->
+        <div id="sideChoice">
+            <!-- Light Side -->
+            <div id="lightSide" class="side">
+                <!-- div to seperate image from button -->
+                <div class="imageWrapper">
+                    <a href="lightSide.html"><img src="assets/images/lightSide.jpg" class="sideImage"></a>
+                <!--closs image wrapper-->
+                </div>
+                <div class="buttonWrapper">
+                    <a href="lightSide.html"><button id="lightSideButton">Light Side</button><a>
+                </div>
+            <!--closes lightSide -->
+            </div>
+            <!-- Neutral -->
+            <div id="neutral" class="side">
+                <div class="imageWrapper">
+                    <a href="#"><img src="assets/images/neutral.jpg" class="sideImage"></a>
+                </div>
+                <div class="buttonWrapper">
+                    <a href="#"><button id="neutralButton">Neutral</button></a>
+                </div>
+            <!--closes neutral -->
+            </div>
+            <!-- Dark Side -->
+            <div id="darkSide" class="side">
+                <div class="images">
+                    <a href="#"><img src="assets/images/darkSide.jpg" class="sideImage"></a>
+                </div>
+                <div class="buttonWrapper">
+                    <a href="#"><button id="darkSideButton">Dark Side</button></a>
+                </div>
+            <!--closes darkSide -->    
+            </div>
+        <!--closes sideChoice -->
+        </div>
+    <!-- closes wrapper -->    
     </div>
    
-
-    <!-- JQuery Link -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
     <!--JS File link -->
     <script src="assets/javascript/app.js"></script>
 </body>

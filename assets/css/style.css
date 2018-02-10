@@ -1,97 +1,145 @@
 body {
-    font-family: monospace;
-    font-weight: 400;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+    background-image: url('../images/space.jpg');
+    background-repeat: repeat;
+    background-size: auto;
 }
 
-
-
-footer.page-footer {
-    margin-top: 0;
-}
-
-.parallax-container {
-    height: 1010px;
-    padding-bottom: 100px;
-}
-
-#header {
-    color: black;
-    text-decoration-color: yellow;
-    font-family: 'Monoton', cursive;
-    font-size: 125px;
-}
-
-#parall {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 1010px;
-    width: 100%;
-}
-
-#introCard {
-    color: #fff;
+#titleDiv {
+    font-family: 'VT323', monospace;
+    margin-top: 10px;
     font-size: 30px;
-    margin: 30px 0;
-    background-color: transparent;
+    color: gold;
+}
+#instructions {
+    background-color: #595959;
+    border: 2px solid #b3b3b3;
+    color: #000000;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 320px;
+    margin-bottom: 30px;
+    width: 800px;
+
+}
+.lightSideQuestionOdd {
+    background-color: #66ff66;
+    border: 2px solid #b3b3b3;
+    color: #000000;
+    text-align: center;
+    margin-left: 320px;
+    margin-bottom: 10px;
+    width: 800px;
+}
+.lightSideQuestionEven {
+    background-color: #5f9efc;
+    border: 2px solid #b3b3b3;
+    color: #000000;
+    text-align: center;
+    margin-left: 320px;
+    margin-bottom: 10px;
+    width: 800px;
+}
+.instructionsTitle {
+    text-decoration: underline;
+}
+#lightSideInstructions {
+    background-color: #5f9efc;
+    border: 2px solid #b3b3b3;
+    color: #000000;
+    text-align: center;
+    margin-left: 320px;
+    margin-bottom: 30px;
+    width: 800px;
+}
+#sideChoice {
+    width:1000px;
+    margin: auto;
+    text-align: center;
 }
 
-#introSection {
-    margin-top: 40px;
+.sideImage {
+    height: 200px;
+    width: auto;
 }
 
-
-#buttonRow {
-    margin-top: 130px;
+#titleDiv{
+    text-align: center;
+}
+.side {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.btn-large {
-    border-radius: 6px;
-    border: #fff 4px solid;
-    line-height: 45px;
-    color: #fff;
-    background-color: transparent;
+.buttonWrapper {
+    margin-top: 10px;
 }
 
-.btn-large:hover {
-    color: #f1c40f;
-    border: #f1c40f 4px solid;
+#lightSideButton {
+    background-color: #5f9efc
+}
+#neutralButton {
+    background-color: #999999
+}
+#darkSideButton {
+    background-color: #ff3300
 }
 
-#questionSpace {
-    color: #fff;
-    margin-top: 40px;
-    padding: 10px;
-    width: 1000px;
-    height: 500px;
+#lightSideSubtitle {
+   text-decoration-color: blue;
 }
 
-#question {
-    font-size: 37px;
+#lightSideQuestionSubmitDiv {
+    text-align: center;
+    width: 600px;
+    margin-left: 420px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
 }
 
-#timer {
-    color: #e74c3c;
-    font-size: 47px;
+.resultPopup {
+    width: 600px;
+    height: 300px;
+    margin-left: 420px;
+    padding-top: 40px;
+    text-align: center;
+    background-color: aqua;
+    border: 1px solid white
 }
 
-#choices {
-    font-size: 23px;
+.darkSideQuestionOdd {
+    background-color: red;
+    border: 2px solid #b3b3b3;
+    color: #000000;
+    text-align: center;
+    margin-left: 320px;
+    margin-bottom: 10px;
+    width: 800px;
 }
-
-.pickAnswer {
-    border: solid 5px #fff;
+.lightSideQuestionEven {
+    background-color: red;
+    border: 2px solid #b3b3b3;
+    color: #000000;
+    text-align: center;
+    margin-left: 320px;
+    margin-bottom: 10px;
+    width: 800px;
 }
-
-.pickAnswer, .pickAnswer:hover {
-    display: block;
-    margin: 20px 0;
-    padding: 10px;
-    border-radius: 6px;
+#darkSideInstructions {
+    background-color: red;
+    border: 2px solid #b3b3b3;
+    color: #000000;
+    text-align: center;
+    margin-left: 320px;
+    margin-bottom: 30px;
+    width: 800px;
 }
-
-.pickAnswer:hover {
-    border: solid 5px #f1c40f;
-    cursor: pointer;
+#darkSideQuestionSubmitDiv {
+    text-align: center;
+    width: 600px;
+    margin-left: 420px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
 }

@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang='en-us'>
+
+<head>
+    <!--Title-->
+    <title>Light Side</title>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+</head>
+
+<body>
+    <!--create a wrapper div-->
+    <div id="wrapper">
+
+        <!--Title-->
+        <div id="titleDiv">
+            <h1>Star Wars Trivia</h1>
+            <h2 id="darkSideSubtitle">The Dark Side</h2>
+        <!--closes title-->
+        </div>
+
+        <!--create instructions div-->
+        <div id="darkSideInstructions">
+            <h3 class="instructionsTitle">Instructions</h3>
+            <p>So, you've chosen the path of Darkness. Then let us test your knowlege of the Dark Side of the Force.</p>
+            <p>Consider each of the following questions carefully, after you have answered all of the questions, hit submit, and see how many you got correct. There are 10 questions in total. 
+            </p>
+        <!--closes instructions --> 
+        </div>
+
+        <!--create hidden div to populate results-->      
+        <div id="results">
+        <!--closes results -->
+        </div>
+
+        <!--create a div to house all questions -->
+        <div class="questionHouse" id="darkSideQuestions">
+            <!--create a form for the questions -->
+            <form id="question1" class="darkSideQuestionOdd">
+                1. What is Darth Vader's Real Name? <br/>
+                <input type="radio" value="a" name="q1"><label>Obi Wan Kenobi</label><br/>
+                <input type="radio" value="b" name="q1"><label>Revan Malak</label><br/>
+                <!--correct answer below-->
+                <input type="radio" value="c" name="q1"><label>Anakin Skywalker</label><br/>
+                <input type="radio" value="d" name="q1"><label>Candarous Ordo</label><br/>
+                <br/>
+                
+                2. Who instituted the Rule of Two? <br/>
+                    <!--correct answer below-->
+                <input type="radio" value="a" name="q2"><label>Darth Bane</label><br/>
+                <input type="radio" value="b" name="q2"><label>Darth Maul</label><br/>
+                <input type="radio" value="c" name="q2"><label>Darth Plagues</label><br/>
+                <input type="radio" value="d" name="q2"><label>Darth Tyrannus</label><br/>
+                <br/>
+    
+                3. What was the original name of the planet where the Valley of Dark Lords can be found? <br/>
+                <input type="radio" value="a" name="q3"><label>Mandalore</label><br/>
+                    <!-- correct answer below -->
+                <input type="radio" value="b" name="q3"><label>Korriban</label><br/>
+                <input type="radio" value="c" name="q3"><label>Dantooine</label><br/>
+                <input type="radio" value="d" name="q3"\><label>Talos</label><br/>
+                <br/>
+
+                4. What's the name of Boba Fett's Ship? <br/>
+                <input type="radio" value="a" name="q4"><label>Millenium Falcon</label><br/>
+                <input type="radio" value="b" name="q4"><label>Ebon Hawk</label><br/>
+                <input type="radio" value="c" name="q4"><label>Ghost</label><br/>
+                <!--correct answer below -->
+                <input type="radio" value="d" name="q4"><label>Slave I</label><br/>
+                <br/>
+             
+                5. What planet is Sheev Palpatine from? <br/>
+                <input type="radio" value="a" name="q5"><label>Coruscant</label><br/>
+                <input type="radio" value="b" name="q5"><label>Tattooine</label><br/>
+                <input type="radio" value="c" name="q5"><label>Geonosis</label><br/>
+                <!--correct answer below -->
+                <input type="radio" value="d" name="q5"><label>Naboo</label><br/>
+                <br/>
+                
+                6. What race is Darth Maul? <br/>
+                    <!--correct answer below-->
+                <input type="radio" name="q6" value="a"><label>Zabrak</label><br/>
+                <input type="radio" name="q6" value="b"><label>Selonian</label><br/>
+                <input type="radio" name="q6" value="c"><label>Endrake</label><br/>
+                <input type="radio" name="q6" value="d"><label>Ithorian</label><br/>
+                <br/>
+               
+                7. Who is Kylo Ren's father? <br/>
+                    <!--correct answer below -->
+                <input type="radio" name="q7" value="a"><label>Han Solo</label><br/>
+                <input type="radio" name="q7" value="b"><label>Obi Wan Kenobi</label><br/>
+                <input type="radio" name="q7" value="c"><label>Luke Skywalker</label><br/>
+                <input type="radio" name="q7" value="d"><label>Lando Calrissian</label><br/>
+                <br/>
+            
+                8. Which of the following is a bounty hunter? <br/>
+                <input type="radio" name="q8" value="a"><label>Momaw Nadon</label><br/>
+                <input type="radio" name="q8" value="b"><label>Bib Fortuna</label><br/>
+                <!--correct answer below -->
+                <input type="radio" name="q8" value="c"><label>IG-88</label><br/>
+                <input type="radio" name="q8" value="d"><label>Jolee Bindo</label><br/>
+                <br/>
+                
+                9. What Imperial Officer was in charge of the first Death Star at the time of it's destruction? <br/>
+                <input type="radio" name="q9" value="a"><label >Kendal Ozzel</label><br/>
+                <!--correct answer below -->
+                <input type="radio" name="q9" value="b"><label>Wilhuff Tarkin</label><br/>
+                <input type="radio" name="q9" value="c"><label>Cassio Tagge</label><br/>
+                <input type="radio" name="q9" value="d"><label>Conan Antonio Motti</label><br/> 
+                <br/>      
+  
+                10. Where does Anakin Skywalker sustain the wounds that put him in the Vader suit? <br/>
+                <input type="radio" name="q10" value="a"><label>Tatooine</label><br/>
+                <!--correct answer below -->
+                <input type="radio" name="q10" value="b"><label>Mustafar</label><br/>
+                <input type="radio" name="q10" value="c"><label>Geonosis</label><br/>
+                <input type="radio" name="q10" value="d"><label>Alderaan</label><br/>
+                <br/>
+            </form>
+
+            <!-- Submit button -->
+            <div id="darkSideQuestionSubmitDiv">
+               <a href='#darkSideInstructions'><input type="submit" value="Submit" onClick="darkSideSubmit()"></a>
+            </div>
+        <!-- closes questionHouse -->
+            </div>
+    <!-- closes wrapper -->  
+    </div>
+  
+    <!--JS File link -->
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

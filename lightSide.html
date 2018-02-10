@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang='en-us'>
+
+<head>
+    <!--Title-->
+    <title>Light Side</title>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+</head>
+
+<body>
+    <!--create a wrapper div-->
+    <div id="wrapper">
+
+        <!--Title-->
+        <div id="titleDiv">
+            <h1>Star Wars Trivia</h1>
+            <h2 id="lightSideSubtitle">The Light Side</h2>
+        <!--closes title-->
+        </div>
+
+        <!--create instructions div-->
+        <div id="lightSideInstructions">
+            <h3 class="instructionsTitle">Instructions</h3>
+            <p>So, you've chosen the path of Light. Then let us test your knowlege of the Light Side of the Force.</p>
+            <p>Consider each of the following questions carefully, after you have answered all of the questions, hit submit, and see how many you got correct. There are 10 questions in total. 
+            </p>
+        <!--closes instructions --> 
+        </div>
+
+        <!--create hidden div to populate results-->      
+        <div id="results">
+        <!--closes results -->
+        </div>
+
+        <!--create a div to house all questions -->
+        <div class="questionHouse" id="lightSideQuestions">
+            <!--create a form for the questions -->
+            <form id="question1" class="lightSideQuestionOdd">
+                1. Who is Luke Skywalker's Father? <br/>
+                <input type="radio" value="a" name="q1"><label>Obi Wan Kenobi</label><br/>
+                <input type="radio" value="b" name="q1"><label>Owen Lars</label><br/>
+                <!--correct answer below-->
+                <input type="radio" value="c" name="q1"><label>Darth Vader</label><br/>
+                <input type="radio" value="d" name="q1"><label>Han Solo</label><br/>
+                <br/>
+                
+                2. Which character does Ewan McGregor's uncle, Denis Lawson, play in the Original Trilogy? <br/>
+                    <!--correct answer below-->
+                <input type="radio" value="a" name="q2"><label>Wedge Antilles</label><br/>
+                <input type="radio" value="b" name="q2"><label>Dak Ralter</label><br/>
+                <input type="radio" value="c" name="q2"><label>Boba Fett</label><br/>
+                <input type="radio" value="d" name="q2"><label>Han Solo</label><br/>
+                <br/>
+    
+                3. What was Luke Skywalker's original surname? <br/>
+                <input type="radio" value="a" name="q3"><label>Starskipper</label><br/>
+                    <!-- correct answer below -->
+                <input type="radio" value="b" name="q3"><label>Starkiller</label><br/>
+                <input type="radio" value="c" name="q3"><label>Sandwalker</label><br/>
+                <input type="radio" value="d" name="q3"\><label>Stargazer</label><br/>
+                <br/>
+
+                4. What's the name of Han Solo's Ship? <br/>
+                <input type="radio" value="a" name="q4"><label>Slave I</label><br/>
+                <input type="radio" value="b" name="q4"><label>Ebon Hawk</label><br/>
+                <input type="radio" value="c" name="q4"><label>Ghost</label><br/>
+                <!--correct answer below -->
+                <input type="radio" value="d" name="q4"><label>Millenium Falcon</label><br/>
+                <br/>
+             
+                5. What planet is Padme Amidala from? <br/>
+                <input type="radio" value="a" name="q5"><label>Coruscant</label><br/>
+                <input type="radio" value="b" name="q5"><label>Tattooine</label><br/>
+                <input type="radio" value="c" name="q5"><label>Geonosis</label><br/>
+                <!--correct answer below -->
+                <input type="radio" value="d" name="q5"><label>Naboo</label><br/>
+                <br/>
+                
+                6. What race is Chewbacca? <br/>
+                    <!--correct answer below-->
+                <input type="radio" name="q6" value="a"><label>Wookie</label><br/>
+                <input type="radio" name="q6" value="b"><label>Bantha</label><br/>
+                <input type="radio" name="q6" value="c"><label>Ewok</label><br/>
+                <input type="radio" name="q6" value="d"><label>Ithorian</label><br/>
+                <br/>
+               
+                7. Where was the Rebel Base featured in the opening scenes of Episode V? <br/>
+                    <!--correct answer below -->
+                <input type="radio" name="q7" value="a"><label>Hoth</label><br/>
+                <input type="radio" name="q7" value="b"><label>Kamino</label><br/>
+                <input type="radio" name="q7" value="c"><label>Jedda</label><br/>
+                <input type="radio" name="q7" value="d"><label>Alderaan</label><br/>
+                <br/>
+            
+                8. Which droid is gold? <br/>
+                <input type="radio" name="q8" value="a"><label>R2-D2</label><br/>
+                <input type="radio" name="q8" value="b"><label>BB-8</label><br/>
+                <!--correct answer below -->
+                <input type="radio" name="q8" value="c"><label>C-3PO</label><br/>
+                <input type="radio" name="q8" value="d"><label>HK-47</label><br/>
+                <br/>
+                
+                9. Who is Luke's copilot in the battle of Hoth? <br/>
+                <input type="radio" name="q9" value="a"><label >Wedge Antilles</label><br/>
+                <!--correct answer below -->
+                <input type="radio" name="q9" value="b"><label>Dak Ralter</label><br/>
+                <input type="radio" name="q9" value="c"><label>Han Solo</label><br/>
+                <input type="radio" name="q9" value="d"><label>R2-D2</label><br/> 
+                <br/>      
+         
+                10. What is Leia's Aunt's Name? <br/>
+                <input type="radio" name="q10" value="a"><label>Beru Lars</label><br/>
+                <!--correct answer below -->
+                <input type="radio" name="q10" value="b"><label>Sabine Wren</label><br/>
+                <input type="radio" name="q10" value="c"><label>Ahsoka Tano</label><br/>
+                <input type="radio" name="q10" value="d"><label>Teckla Minnau</label><br/>
+                <br/>
+            </form>
+
+            <!-- Submit button -->
+            <div id="lightSideQuestionSubmitDiv">
+               <a href='#lightSideInstructions'><input type="submit" value="Submit" onClick="lightSideSubmit()"></a>
+            </div>
+        <!-- closes questionHouse -->
+            </div>
+    <!-- closes wrapper -->  
+    </div>
+  
+    <!--JS File link -->
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
